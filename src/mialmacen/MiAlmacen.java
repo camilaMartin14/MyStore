@@ -5,41 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class MiAlmacen {
-
-    static class Producto implements Comparable<Producto> {
-        private String nombreProducto;
-        private String descripcion;
-        private double precioEnPesos;
-
-        public Producto(String nombre, String descripcion, double precio) {
-            this.nombreProducto = nombre;
-            this.descripcion = descripcion;
-            this.precioEnPesos = precio;
-        }
-
-        public String getNombre() {
-            return nombreProducto;
-        }
-
-        public String getDescripcion() {
-            return descripcion;
-        }
-
-        public double getPrecio() {
-            return precioEnPesos;
-        }
-
-        @Override
-        public int compareTo(Producto otroProducto) {
-            return Double.compare(this.getPrecio(), otroProducto.getPrecio());
-        }
-
-        @Override
-        public String toString() {
-            return "Nombre: " + nombreProducto + " /// " + descripcion + " /// Precio: $" + precioEnPesos;
-        }
-    }
-
+    
     public static void main(String[] args) {
         List<Producto> productos = cargarProductos();
 

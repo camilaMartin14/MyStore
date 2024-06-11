@@ -1,7 +1,0 @@
-### Java ###
-*.class
-*.jar
-*.war
-*.ear
-/target/
-
