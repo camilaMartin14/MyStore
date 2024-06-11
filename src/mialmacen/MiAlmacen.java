@@ -45,7 +45,6 @@ public class MiAlmacen {
 
         imprimirProductos(productos);
 
-        // Encontrar producto más caro y más barato
         Producto productoMasCaro = Collections.max(productos);
         Producto productoMasBarato = Collections.min(productos);
 
